@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: knowtube
+        psr4_prefix: knowtube
+        src_path: app
