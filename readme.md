@@ -1,5 +1,9 @@
 #KnowTube
 
+this app is currently running on [here](https://knowtube.herokuapp.com).
+
+feel free to login and upload videos of your own.
+
 This app allows you to upload learning resource
 ## Installation
 ### Requirements
@@ -17,3 +21,4 @@ This app allows you to upload learning resource
 4. finally setup your server to serve from the `public` folder.
 
 for more help please see the introduction [here](http://laravel.com/docs/5.1#installation).
+
