@@ -1,6 +1,6 @@
 <?php
 
-namespace knowtube\Exceptions;
+namespace KnowTube\Exceptions;
 
 use Exception;
 use Illuminate\Database\Eloquent\ModelNotFoundException;

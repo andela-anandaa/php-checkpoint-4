@@ -1,6 +1,6 @@
 <?php
 
-namespace knowtube\Http\Middleware;
+namespace KnowTube\Http\Middleware;
 
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken as BaseVerifier;
 

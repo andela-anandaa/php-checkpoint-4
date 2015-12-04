@@ -1,6 +1,6 @@
 <?php
 
-namespace knowtube;
+namespace KnowTube;
 
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;

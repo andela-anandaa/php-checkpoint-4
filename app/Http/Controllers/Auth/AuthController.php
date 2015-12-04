@@ -1,10 +1,10 @@
 <?php
 
-namespace knowtube\Http\Controllers\Auth;
+namespace KnowTube\Http\Controllers\Auth;
 
-use knowtube\User;
 use Validator;
-use knowtube\Http\Controllers\Controller;
+use KnowTube\User;
+use KnowTube\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
@@ -22,6 +22,10 @@ class AuthController extends Controller
     */
 
     use AuthenticatesAndRegistersUsers, ThrottlesLogins;
+
+    protected $redirectPath = '/';
+
+    protected $loginPath = '/auth/login';
 
     /**
      * Create a new authentication controller instance.

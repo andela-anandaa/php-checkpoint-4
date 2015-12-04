@@ -1,6 +1,6 @@
 <?php
 
-namespace knowtube\Http\Requests;
+namespace KnowTube\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

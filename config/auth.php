@@ -28,7 +28,7 @@ return [
     |
     */
 
-    'model' => knowtube\User::class,
+    'model' => KnowTube\User::class,
 
     /*
     |--------------------------------------------------------------------------

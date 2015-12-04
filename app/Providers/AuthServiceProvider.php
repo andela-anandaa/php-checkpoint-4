@@ -1,6 +1,6 @@
 <?php
 
-namespace knowtube\Providers;
+namespace KnowTube\Providers;
 
 use Illuminate\Contracts\Auth\Access\Gate as GateContract;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
@@ -13,7 +13,8 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-        'knowtube\Model' => 'knowtube\Policies\ModelPolicy',
+        'KnowTube\Model' => 'KnowTube\Policies\ModelPolicy',
+        'KnowTube\Resource' => 'KnowTube\Policies\ResourcePolicy',
     ];
 
     /**

@@ -1,6 +1,6 @@
 <?php
 
-namespace knowtube\Http\Controllers;
+namespace KnowTube\Http\Controllers;
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;

@@ -138,12 +138,17 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 
         /*
+         * others
+         */
+        Laravel\Socialite\SocialiteServiceProvider::class,
+
+        /*
          * Application Service Providers...
          */
-        knowtube\Providers\AppServiceProvider::class,
-        knowtube\Providers\AuthServiceProvider::class,
-        knowtube\Providers\EventServiceProvider::class,
-        knowtube\Providers\RouteServiceProvider::class,
+        KnowTube\Providers\AppServiceProvider::class,
+        KnowTube\Providers\AuthServiceProvider::class,
+        KnowTube\Providers\EventServiceProvider::class,
+        KnowTube\Providers\RouteServiceProvider::class,
 
     ],
 
@@ -193,6 +198,7 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
 
     ],
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace knowtube\Events;
+namespace KnowTube\Events;
 
 abstract class Event
 {

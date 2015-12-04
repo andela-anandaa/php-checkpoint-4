@@ -1,6 +1,6 @@
 <?php
 
-namespace knowtube\Http;
+namespace KnowTube\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
@@ -13,11 +13,11 @@ class Kernel extends HttpKernel
      */
     protected $middleware = [
         \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
-        \knowtube\Http\Middleware\EncryptCookies::class,
+        \KnowTube\Http\Middleware\EncryptCookies::class,
         \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
         \Illuminate\Session\Middleware\StartSession::class,
         \Illuminate\View\Middleware\ShareErrorsFromSession::class,
-        \knowtube\Http\Middleware\VerifyCsrfToken::class,
+        \KnowTube\Http\Middleware\VerifyCsrfToken::class,
     ];
 
     /**
@@ -26,8 +26,8 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
-        'auth' => \knowtube\Http\Middleware\Authenticate::class,
+        'auth' => \KnowTube\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
-        'guest' => \knowtube\Http\Middleware\RedirectIfAuthenticated::class,
+        'guest' => \KnowTube\Http\Middleware\RedirectIfAuthenticated::class,
     ];
 }

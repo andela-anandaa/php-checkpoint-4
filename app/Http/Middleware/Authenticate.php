@@ -1,6 +1,6 @@
 <?php
 
-namespace knowtube\Http\Middleware;
+namespace KnowTube\Http\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Auth\Guard;

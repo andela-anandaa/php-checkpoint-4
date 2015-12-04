@@ -1,6 +1,6 @@
 <?php
 
-namespace knowtube\Providers;
+namespace KnowTube\Providers;
 
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -13,8 +13,8 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'knowtube\Events\SomeEvent' => [
-            'knowtube\Listeners\EventListener',
+        'KnowTube\Events\SomeEvent' => [
+            'KnowTube\Listeners\EventListener',
         ],
     ];
 

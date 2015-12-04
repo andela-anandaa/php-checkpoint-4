@@ -1,6 +1,6 @@
 <?php
 
-namespace knowtube\Jobs;
+namespace KnowTube\Jobs;
 
 use Illuminate\Bus\Queueable;
 

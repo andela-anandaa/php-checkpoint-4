@@ -1,6 +1,6 @@
 <?php
 
-namespace knowtube\Console;
+namespace KnowTube\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
@@ -13,7 +13,7 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        \knowtube\Console\Commands\Inspire::class,
+        \KnowTube\Console\Commands\Inspire::class,
     ];
 
     /**

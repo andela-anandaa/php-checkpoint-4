@@ -1,6 +1,6 @@
 <?php
 
-namespace knowtube\Providers;
+namespace KnowTube\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

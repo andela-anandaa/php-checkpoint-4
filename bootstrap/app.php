@@ -28,17 +28,17 @@ $app = new Illuminate\Foundation\Application(
 
 $app->singleton(
     Illuminate\Contracts\Http\Kernel::class,
-    knowtube\Http\Kernel::class
+    KnowTube\Http\Kernel::class
 );
 
 $app->singleton(
     Illuminate\Contracts\Console\Kernel::class,
-    knowtube\Console\Kernel::class
+    KnowTube\Console\Kernel::class
 );
 
 $app->singleton(
     Illuminate\Contracts\Debug\ExceptionHandler::class,
-    knowtube\Exceptions\Handler::class
+    KnowTube\Exceptions\Handler::class
 );
 
 /*

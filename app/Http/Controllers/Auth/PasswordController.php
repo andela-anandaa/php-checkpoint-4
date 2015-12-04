@@ -1,8 +1,8 @@
 <?php
 
-namespace knowtube\Http\Controllers\Auth;
+namespace KnowTube\Http\Controllers\Auth;
 
-use knowtube\Http\Controllers\Controller;
+use KnowTube\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 
 class PasswordController extends Controller

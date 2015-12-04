@@ -1,6 +1,6 @@
 <?php
 
-namespace knowtube\Console\Commands;
+namespace KnowTube\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Foundation\Inspiring;
