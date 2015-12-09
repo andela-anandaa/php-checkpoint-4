@@ -28,7 +28,9 @@ Route::post('auth/register', 'Auth\\AuthController@postRegister');
 Route::get('/auth/{provider}/', 'Auth\\SocialAuthController@redirectToProvider');
 Route::get('/auth/{provider}/callback', 'Auth\\SocialAuthController@handleProviderCallback');
 
-Route::resource('/api/resources', 'ResourceController');
+// User Profile
+Route::get('/profile', 'User\ProfileController@getEditProfile');
+Route::post('/profile', 'User\ProfileController@postEditProfile');
 
 Route::group(['prefix' => '/resources'], function () {
     Route::get('/', 'Resource\\DashboardController@getIndex');

@@ -47,7 +47,7 @@
                       @endforeach
                     </select>
                     <span class="input-group-btn">
-                      <button class="btn btn-primary" type="button"  data-toggle="modal" data-target="#categoryModal">Add</button>
+                      <button class="btn btn-default" type="button"  data-toggle="modal" data-target="#categoryModal">Add</button>
                     </span>
                   </div><!-- /input-group -->
 
@@ -60,7 +60,7 @@
                   @endif
                 </div>
 
-                <button type="submit" class="btn btn-default">Post</button>
+                <button type="submit" class="btn btn-primary">Post</button>
             </form>
         </div>
     </div>

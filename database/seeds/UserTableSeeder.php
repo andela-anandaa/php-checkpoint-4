@@ -14,14 +14,14 @@ class UserTableSeeder extends Seeder
     public function run()
     {
         // a native user
-        User::create([
+        factory('KnowTube\User')->create([
             'name' => 'userone',
             'email' => 'userone@userone.com',
             'password' => bcrypt('userone'),
         ]);
 
         // a social user
-        User::create([
+        factory('KnowTube\User')->create([
             'name' => 'usertwo',
             'provider' => 'google',
             'provider_id' => str_random(32),

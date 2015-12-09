@@ -44,7 +44,7 @@
                         </span>
                     @endif
                   </div>
-                  <button type="submit" class="btn btn-default">Register</button>
+                  <button type="submit" class="btn btn-primary">Register</button>
                 </form>
             </div>
             <div class="col-xs-6">
