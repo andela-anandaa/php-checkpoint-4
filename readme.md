@@ -1,16 +1,10 @@
 [![Coverage Status](https://coveralls.io/repos/andela-bkagia/php-checkpoint-4/badge.svg?branch=develop&service=github)](https://coveralls.io/github/andela-bkagia/php-checkpoint-4?branch=develop)
-
 [![Circle CI](https://circleci.com/gh/andela-bkagia/php-checkpoint-4/tree/develop.svg?style=svg)](https://circleci.com/gh/andela-bkagia/php-checkpoint-4/tree/develop)
-
-
---
 
 
 #KnowTube
 
 This app is currently running [here](https://knowtube.herokuapp.com).
-
-####Description
 
 KnowTube is an app that hosts educational YouTube videos.
 
@@ -20,22 +14,22 @@ users are free to browse, edit and add new content.
 
 ###Features
 
-You may filter the videos by category by using the buttons
+- You may filter the videos by category by using the buttons
 along the top.
 
-You may also revert to viewing all videos by clicking **All**.
+- You may also revert to viewing all videos by clicking **All**.
 
-If you want to add your own videos, you may do so through
+- If you want to add your own videos, you may do so through
 the dashboard. To access the dashboard you will have to
 register an account.
 
-You may register and login with your existing Google+ or
+- You may register and login with your existing Google+ or
 Github account.
 
-Also please note that you can only change videos that you
+- Also please note that you can only change videos that you
 yourself added to the site.
 
-Have fun and learn something new today!
+- Have fun and learn something new today!
 
 ## Installation
 ### Requirements
