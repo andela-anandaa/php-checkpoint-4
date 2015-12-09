@@ -18,9 +18,12 @@ class DashboardController extends Controller
         $this->middleware('auth', [
             'except' => [
                 'getIndex',
-                'getIndexByCategory'
+                'getIndexByCategory',
+                'getResource',
             ]
         ]);
+
+        $this->categories = Category::all();
     }
 
     /**
@@ -34,7 +37,7 @@ class DashboardController extends Controller
 
         return view('resource.index', [
             'resources' => $resources,
-            'categories' => Category::all(),
+            'categories' => $this->categories,
         ]);
     }
 
@@ -49,7 +52,7 @@ class DashboardController extends Controller
 
         return view('resource.index', [
             'resources' => $resources,
-            'categories' => Category::all(),
+            'categories' => $this->categories,
         ]);
     }
 
@@ -62,7 +65,7 @@ class DashboardController extends Controller
     public function getCreate()
     {
         return view('resource.create', [
-            'categories' => Category::all(),
+            'categories' => $this->categories,
         ]);
     }
 
@@ -80,7 +83,7 @@ class DashboardController extends Controller
 
         return view('resource.edit', [
             'resource' => $resource,
-            'categories' => Category::all(),
+            'categories' => $this->categories,
         ]);
     }
 

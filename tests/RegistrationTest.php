@@ -8,6 +8,9 @@ class RegistrationTest extends TestCase
 {
     use DatabaseMigrations;
 
+    /**
+     * user can register
+     */
     public function testCanRegister()
     {
         $username = "testregister";

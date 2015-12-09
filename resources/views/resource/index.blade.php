@@ -12,7 +12,7 @@
         <div id="dashboard">
             <div class="row">
             @foreach ($resources as $resource)
-                <div class="col-xs-4"">
+                <div class="col-xs-12 col-md-4"">
                     <div class="panel panel-default">
                       <div class="panel-heading">
                         <h3 class="panel-title">{{ $resource->title }}</h3>
@@ -22,7 +22,7 @@
                           <iframe class="embed-responsive-item" src="{{ $resource->url }}"></iframe>
                         </div>
 
-                        <a class="btn btn-default" href="{!! action('Resource\\DashboardController@getResource', ['resource_id' => $resource->id]) !!}">read more...</a>
+                        <a class="btn btn-primary" href="{!! action('Resource\\DashboardController@getResource', ['resource_id' => $resource->id]) !!}">read more...</a>
                       </div>
                     </div>
                 </div>

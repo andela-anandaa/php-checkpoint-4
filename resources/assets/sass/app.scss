@@ -51,3 +51,8 @@ body:before {
         border: 0;
     }
 }
+
+nav .avatar {
+    max-height: $navbar-height;
+    width: auto;
+}

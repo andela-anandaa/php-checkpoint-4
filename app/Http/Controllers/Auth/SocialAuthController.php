@@ -33,14 +33,18 @@ class SocialAuthController extends Controller
         $nativeUser = User::firstOrNew([
             'email' => $socialUser->email,
         ]);
+
+        $nativeUser = User::where('email', $socialUser->email)->first();
         
         // if the user did not exist in the database save
         // register them.
-        if (!$nativeUser->exists()) {
+        if ($nativeUser == null) {
+            $nativeUser = new User();
             $nativeUser->email = $socialUser->email;
             $nativeUser->name = $socialUser->name;
             $nativeUser->provider = $provider;
             $nativeUser->provider_id = $socialUser->id;
+            $nativeUser->avatar = $socialUser->avatar;
 
             $nativeUser->save();
         } elseif ($nativeUser->provider !== $provider) {
